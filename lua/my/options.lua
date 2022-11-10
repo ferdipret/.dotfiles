@@ -13,7 +13,7 @@ local options = {
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
   smartcase = true,                        -- smart case
-  smartindent = true,                      -- make indenting smarter again
+--  smartindent = true,                      -- make indenting smarter again
   splitbelow = true,                       -- force all horizontal splits to go below current window
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = false,                        -- creates a swapfile
@@ -35,6 +35,9 @@ local options = {
   list = true,
 }
 
+vim.diagnostic.config({
+  virtual_text = false,
+})
 vim.opt.shortmess:append "c"
 vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"

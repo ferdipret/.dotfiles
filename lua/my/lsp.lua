@@ -21,7 +21,3 @@ for _, language_server in ipairs(language_servers) do
     capabilities = capabilities
   }
 end
-
-require('lualine').setup {
-  options = { section_separators = '', component_separators = '' }
-}

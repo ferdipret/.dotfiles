@@ -4,9 +4,9 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = {},
+  ensure_installed = "all",
   sync_install = false,
-  ignore_install = { },
+  ignore_install = {},
   highlight = {
     enable = true,
     disable = { "txt", "help" },
