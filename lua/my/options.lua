@@ -35,8 +35,14 @@ local options = {
   list = true,
 }
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.diagnostic.config({
   virtual_text = false,
+  float = {
+    source = 'always',
+  }
 })
 vim.opt.shortmess:append "c"
 vim.opt.listchars:append "space:⋅"

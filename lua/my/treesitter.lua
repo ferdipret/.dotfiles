@@ -11,4 +11,8 @@ configs.setup({
     enable = true,
     disable = { "txt", "help" },
   },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  }
 })

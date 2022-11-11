@@ -43,6 +43,38 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
 
+  use "elihunter173/dirbuf.nvim"
+  use {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require("nvim-tree").setup {
+        update_to_buf_dir = { enable = false }
+      }
+    end,
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    }
+  }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+  use { 'JoosepAlviste/nvim-ts-context-commentstring',
+    config = function()
+      require 'nvim-treesitter.configs'.setup {
+        context_commentstring = {
+          enable = true
+        }
+      }
+    end
+  }
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
+
   -- UI
   use 'kdheepak/lazygit.nvim'
   use {
@@ -103,11 +135,10 @@ return require('packer').startup(function(use)
   }
 
   use "folke/which-key.nvim"
-  -- Doesn't play well with treesitter in some files
-  -- use {
-  --   "windwp/nvim-autopairs",
-  --   config = function() require("nvim-autopairs").setup {} end
-  -- }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 
   -- File management
   use {
