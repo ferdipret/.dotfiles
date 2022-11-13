@@ -31,23 +31,17 @@ local options = {
   list = true,
 }
 
-vim.au({'BufNewFile', 'BufRead'}, {
-  '*.py,*.c,*.cpp,*',
-  function ()
-    vim.opt.tabstop = 4
-    vim.opt.softtabstop = 4
-    vim.opt.shiftwidth = 4
-  end
-})
+vim.cmd([[
+  au BufNewFile,BufRead *.py,*.c,*.cpp
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
 
-vim.au({'BufNewFile', 'BufRead'}, {
-  '*.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.json',
-  function ()
-    vim.opt.tabstop = 2
-    vim.opt.softtabstop = 2
-    vim.opt.shiftwidth = 2
-  end
-})
+  au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.json,*
+    \ set tabstop=2 |
+    \ set shiftwidth=2 |
+    \ set softtabstop=2 |
+]])
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
