@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
     "nvim-tree/nvim-tree.lua",
     config = function()
       require("nvim-tree").setup {
-        update_to_buf_dir = { enable = false }
+        hijack_netrw = false,
       }
     end,
     requires = {
@@ -72,7 +72,7 @@ return require('packer').startup(function(use)
   }
   use {
     'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
   -- UI
