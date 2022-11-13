@@ -17,10 +17,17 @@ which_key.setup({
 })
 
 which_key.register({
+  ["<C-_>"] = { "<Plug>(comment_toggle_linewise_visual)", "Search in project" },
+}, { mode = 'v' })
+
+which_key.register({
   ["<"] = { "<cmd>BufferPrevious<CR>", "Buffer previous" },
   [">"] = { "<cmd>BufferNext<CR>", "Buffer next" },
+  ["?"] = { builtin.keymaps, "Get maps" },
+  -- This maps to Control + /
+  ["<C-_>"] = { "<Plug>(comment_toggle_linewise_current)", "Search in project" },
   ["<leader>"] = {
-    ["<leader>"] = { builtin.find_files, "Find file" },
+    ["<leader>"] = { "<cmd>Telescope find_files", "Find file" },
     ["/"] = { builtin.live_grep, "Search in project" },
     [","] = { builtin.buffers, "Switch workspace buffer" },
     ["-"] = { "<cmd>Dirbuf<CR>", "Dirbuf" },
@@ -33,9 +40,9 @@ which_key.register({
 
     c = {
       name = "+code",
-      a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Action task" },
-      f = { "<cmd>lua vim.lsp.buf.format {async = true}<CR>", "Format file" },
-      r = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Rename keyword" },
+      a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Action" },
+      f = { "<cmd>lua vim.lsp.buf.format {async = true}<CR>", "Format" },
+      r = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Rename" },
     },
 
     d = {
@@ -48,7 +55,7 @@ which_key.register({
 
     f = {
       name = "+file",
-      f = { "<cmd>Telescope find_files<cr>", "Find file" },
+      f = { "<cmd>Telescope find_files hidden=true<CR>", "Find file" },
     },
 
     g = {
