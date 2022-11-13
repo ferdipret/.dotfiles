@@ -20,6 +20,10 @@ require("tokyonight").setup({
 local colorscheme = "tokyonight-night"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
+if not status_ok then
+  return
+end
+
 require('lualine').setup {
   options = {
     section_separators = '',
@@ -27,7 +31,3 @@ require('lualine').setup {
     theme = 'tokyonight',
   }
 }
-
-if not status_ok then
-  return
-end
