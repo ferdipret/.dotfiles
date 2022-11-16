@@ -1,5 +1,7 @@
+local options = require("options")
+
 -- :help options
-local options = {
+local settings = {
   fileencoding = "utf-8",
   backup = false,
   writebackup = false,
@@ -43,20 +45,19 @@ vim.cmd([[
     \ set softtabstop=2 |
 ]])
 
+vim.cmd("colorscheme " .. options.colorscheme)
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.diagnostic.config({
   virtual_text = false,
-  float = {
-    source = 'always',
-  }
 })
 vim.opt.shortmess:append "c"
 vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"
 
-for k, v in pairs(options) do
+for k, v in pairs(settings) do
   vim.opt[k] = v
 end
 
