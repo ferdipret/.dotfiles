@@ -177,37 +177,6 @@ return require("packer").startup(function(use)
 
 	-- Snippets
 	use("L3MON4D3/LuaSnip")
-
-	-- Org
-	use({
-		"nvim-neorg/neorg",
-		run = ":Neorg sync-parsers",
-		config = function()
-			require("neorg").setup({
-				load = {
-					["core.defaults"] = {},
-					["core.keybinds"] = {
-						config = {
-							default_keybinds = true,
-						},
-					},
-					["core.norg.dirman"] = {
-						config = {
-							workspaces = {
-								work = "~/notes/work",
-								home = "~/notes/home",
-							},
-						},
-					},
-					["core.norg.concealer"] = {
-						config = {},
-					},
-				},
-			})
-		end,
-		requires = "nvim-lua/plenary.nvim",
-	})
-
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

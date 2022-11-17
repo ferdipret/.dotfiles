@@ -22,13 +22,13 @@ function M.setup()
 	}, { mode = "v" })
 
 	which_key.register({
-		["<"] = { "<cmd>BufferPrevious<CR>", "Buffer previous" },
-		[">"] = { "<cmd>BufferNext<CR>", "Buffer next" },
+		["<"] = { "<cmd>bprev<CR>", "Buffer previous" },
+		[">"] = { "<cmd>bnext<CR>", "Buffer next" },
 		["?"] = { builtin.keymaps, "Get maps" },
 		-- This maps to Control + /
 		["<C-_>"] = { "<Plug>(comment_toggle_linewise_current)", "Search in project" },
 		["<leader>"] = {
-			["<leader>"] = { "<cmd>Telescope find_files", "Find file" },
+			["<leader>"] = { "<cmd>Telescope find_files<CR>", "Find file" },
 			["/"] = { builtin.live_grep, "Search in project" },
 			[","] = { builtin.buffers, "Switch workspace buffer" },
 			["-"] = { "<cmd>Dirbuf<CR>", "Dirbuf" },
@@ -37,6 +37,8 @@ function M.setup()
 				name = "+buffer",
 				a = { "<cmd>BufferCloseAllButCurrent<CR>", "Delete all but current" },
 				d = { "<cmd>BufferDelete<CR>", "Delete" },
+        p = { "<cmd>bprev<CR>", "Buffer previous" },
+        n = { "<cmd>bnext<CR>", "Buffer next" },
 			},
 
 			c = {
