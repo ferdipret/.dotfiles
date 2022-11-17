@@ -1,0 +1,6 @@
+(undo-tree-save-format-version . 1)
+"b759ccd67ef4d1a7f33e400c46a3e0252c0ec1a0"
+[nil nil nil nil (25378 16887 740739 0) 0 nil]
+([nil nil ((6723 . 6724) (6722 . 6723) (6721 . 6722) (6674 . 6675) (6673 . 6674) (6672 . 6673) (6663 . 6664) (6662 . 6663) (6661 . 6662) (6609 . 6610) (6608 . 6609) (6607 . 6608) (6596 . 6597) (6595 . 6596) (6594 . 6595) (6581 . 6582) (6580 . 6581) (6579 . 6580) (6539 . 6542) (t 25378 16514 586167 172000)) nil (25378 16887 740734 0) 0 nil])
+([nil current ((#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6703) (undo-tree-id0 . -2) (undo-tree-id1 . -2) (undo-tree-id2 . -2) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6657) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6649) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6598) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6588) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6576) (#(";; " 0 3 (fontified t face font-lock-comment-delimiter-face)) . 6539) 6723 (t 25378 16887 840264 849000)) nil (25378 16987 545447 0) 0 nil])
+nil
