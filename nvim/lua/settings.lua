@@ -45,7 +45,9 @@ vim.cmd([[
     \ set softtabstop=2 |
 ]])
 
-vim.cmd("colorscheme " .. options.colorscheme)
+if options.colorscheme then
+	vim.cmd("colorscheme " .. options.colorscheme)
+end
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
