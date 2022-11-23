@@ -33,18 +33,6 @@ local settings = {
   list = true,
 }
 
-vim.cmd([[
-  au BufNewFile,BufRead *.py,*.c,*.cpp
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-
-  au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.json,*
-    \ set tabstop=2 |
-    \ set shiftwidth=2 |
-    \ set softtabstop=2 |
-]])
-
 if options.colorscheme then
 	vim.cmd("colorscheme " .. options.colorscheme)
 end
