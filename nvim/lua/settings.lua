@@ -22,6 +22,8 @@ local settings = {
   termguicolors = true,
   timeoutlen = 300,
   updatetime = 300,
+  shiftwidth = 2,
+  tabstop = 2,
   expandtab = true,
   cursorline = true,
   number = true,
@@ -34,7 +36,7 @@ local settings = {
 }
 
 if options.colorscheme then
-	vim.cmd("colorscheme " .. options.colorscheme)
+  vim.cmd("colorscheme " .. options.colorscheme)
 end
 
 vim.g.loaded_netrw = 1
