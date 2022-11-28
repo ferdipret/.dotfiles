@@ -7,7 +7,7 @@ function M.setup()
   end
 
   treesitter_configs.setup({
-    ensure_installed = "all",
+    ensure_installed = {"typescript", "javascript", "elixir", "lua"},
     sync_install = false,
     ignore_install = {},
     highlight = {
