@@ -14,6 +14,7 @@ local language_servers = {
   "elixirls",
   "sumneko_lua",
   "jsonls",
+  "tailwindcss",
 }
 
 for _, language_server in ipairs(language_servers) do
