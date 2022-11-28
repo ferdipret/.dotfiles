@@ -73,7 +73,7 @@ function M.setup()
 
 			o = {
 				name = "+open",
-				p = { "<cmd>NvimTreeToggle<CR>", "Project sidebar" },
+				p = { "<cmd>NvimTreeFindFile<CR>", "Project sidebar" },
 			},
 
 			["<localleader>"] = {
