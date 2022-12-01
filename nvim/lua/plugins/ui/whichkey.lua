@@ -22,8 +22,6 @@ function M.setup()
 	}, { mode = "v" })
 
 	which_key.register({
-		["<"] = { "<cmd>bprev<CR>", "Buffer previous" },
-		[">"] = { "<cmd>bnext<CR>", "Buffer next" },
 		["?"] = { builtin.keymaps, "Get maps" },
 		-- This maps to Control + /
 		["<C-_>"] = { "<Plug>(comment_toggle_linewise_current)", "Search in project" },
