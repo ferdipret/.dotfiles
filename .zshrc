@@ -38,3 +38,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add IEx history
 export ERL_AFLAGS="-kernel shell_history enabled"
+export PATH="/usr/local/opt/llvm/bin:$PATH"

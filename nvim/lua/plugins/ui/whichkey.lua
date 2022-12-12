@@ -61,13 +61,19 @@ function M.setup()
 
 			g = {
 				name = "+git",
-				g = { "<cmd>LazyGit<cr>", "Git status" },
+				g = { "<cmd>LazyGit<CR>", "Git status" },
 			},
 
 			h = {
 				name = "+help",
 				h = { builtin.help_tags, "Help tags" },
 			},
+
+      n = {
+        name = "+notes",
+        s = { "<cmd>ObsidianSearch<CR>", "Search" },
+        d = { "<cmd>ObsidianToday<CR>", "Daily" },
+      },
 
 			o = {
 				name = "+open",
