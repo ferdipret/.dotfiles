@@ -1,5 +1,5 @@
 local M = {
-  colorscheme = "tokyonight-night",
+  colorscheme = "catppuccin-mocha",
   leader = " ",
   localleader = "m",
 }

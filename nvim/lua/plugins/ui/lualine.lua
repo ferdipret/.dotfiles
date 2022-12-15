@@ -10,7 +10,7 @@ function M.setup()
     options = {
       section_separators = { left = "", right = "" },
       component_separators = '',
-      theme = 'tokyonight',
+      theme = 'catppuccin',
     },
     sections = {
       lualine_c = {

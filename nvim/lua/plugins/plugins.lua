@@ -54,6 +54,13 @@ return require("packer").startup(function(use)
 
   -- UI
   use({
+    "catppuccin/nvim",
+    as = "catppuccin",
+    config = function ()
+      require("plugins.ui.colorschemes.catppuccin").setup()
+    end
+  })
+  use({
     "folke/tokyonight.nvim",
     config = function()
       require("plugins.ui.colorschemes.tokyonight").setup()
