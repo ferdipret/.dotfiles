@@ -13,6 +13,7 @@ function M.setup()
       null_ls.builtins.diagnostics.eslint,
       null_ls.builtins.code_actions.eslint,
     },
+    on_attach = require("lsp-format").on_attach,
   })
 end
 

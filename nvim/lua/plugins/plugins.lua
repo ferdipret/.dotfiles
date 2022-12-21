@@ -56,7 +56,7 @@ return require("packer").startup(function(use)
   use({
     "catppuccin/nvim",
     as = "catppuccin",
-    config = function ()
+    config = function()
       require("plugins.ui.colorschemes.catppuccin").setup()
     end
   })
@@ -205,6 +205,7 @@ return require("packer").startup(function(use)
     end
   }
 
+  use "lukas-reineke/lsp-format.nvim"
   use { 'godlygeek/tabular' }
   use {
     'epwalsh/obsidian.nvim',
