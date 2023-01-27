@@ -35,8 +35,8 @@ local settings = {
   list = true,
 }
 
-if options.colorscheme then
-  vim.cmd("colorscheme " .. options.colorscheme)
+if options.colorscheme.name and pcall(require, options.colorscheme.package) then
+  vim.cmd("colorscheme " .. options.colorscheme.name)
 end
 
 vim.g.loaded_netrw = 1
