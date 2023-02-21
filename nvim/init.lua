@@ -1,7 +1,5 @@
-vim.defer_fn(function()
-  pcall(require, "impatient")
-end, 0)
+vim.defer_fn(function() pcall(require, 'impatient') end, 0)
 
-require("plugins")
-require("settings")
-require("keymaps")
+require('ferdipret.settings')
+require('ferdipret.keymaps')
+require('ferdipret.plugins')
