@@ -25,5 +25,9 @@ require('lualine').setup({
 		section_separators = { left = '', right = '' },
 		component_separators = '',
 		theme = 'auto',
+		disabled_filetypes = {
+			statusline = { 'NvimTree' },
+			winbar = { 'NvimTree' },
+		},
 	},
 })
