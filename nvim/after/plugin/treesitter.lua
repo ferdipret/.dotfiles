@@ -2,7 +2,17 @@ local status_ok, treesitter_configs = pcall(require, 'nvim-treesitter.configs')
 if not status_ok then return end
 
 treesitter_configs.setup({
-	ensure_installed = { 'help', 'javascript', 'typescript', 'tsx', 'lua', 'markdown', 'html', 'json', 'vim' },
+	ensure_installed = {
+		'help',
+		'javascript',
+		'typescript',
+		'tsx',
+		'lua',
+		'markdown',
+		'html',
+		'json',
+		'vim',
+	},
 	sync_install = false,
 	highlight = {
 		enable = true,

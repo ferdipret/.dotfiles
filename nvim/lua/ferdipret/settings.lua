@@ -12,7 +12,7 @@ local settings = {
 	mouse = 'a',
 	pumheight = 10,
 	showmode = false,
-	showtabline = 2,
+--	showtabline = 2,
 	smartcase = true,
 	splitbelow = true,
 	splitright = true,
@@ -22,7 +22,7 @@ local settings = {
 	updatetime = 300,
 	shiftwidth = 2,
 	tabstop = 2,
-	expandtab = true,
+	expandtab = false,
 	cursorline = true,
 	number = true,
 	relativenumber = true,
@@ -41,7 +41,7 @@ vim.diagnostic.config({
 })
 vim.opt.shortmess:append('c')
 vim.opt.listchars:append('space:⋅')
-vim.opt.listchars:append('tab:» ')
+vim.opt.listchars:append('tab: →')
 vim.opt.listchars:append('eol:↴')
 
 for k, v in pairs(settings) do

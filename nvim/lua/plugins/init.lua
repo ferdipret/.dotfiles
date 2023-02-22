@@ -13,6 +13,7 @@ return {
 	'kylechui/nvim-surround',
 	'folke/trouble.nvim',
 	'windwp/nvim-ts-autotag',
+	'romgrk/barbar.nvim',
 	{
 		'epwalsh/obsidian.nvim',
 		dependencies = { 'nvim-telescope/telescope.nvim' },

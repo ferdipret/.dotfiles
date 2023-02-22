@@ -14,28 +14,16 @@ require('nvim-autopairs').setup()
 require('nvim-surround').setup()
 require('trouble').setup()
 require('nvim-ts-autotag').setup()
+-- require('bufferline').setup()
+
+require('indent_blankline').setup({
+	show_current_context = true,
+})
 
 require('lualine').setup({
 	options = {
 		section_separators = { left = '', right = '' },
 		component_separators = '',
-		theme = 'tokyonight',
-	},
-	sections = {
-		lualine_c = {
-			{
-				'filename',
-				path = 1,
-			},
-		},
-		lualine_x = { 'encoding', 'filetype' },
-	},
-	tabline = {
-		lualine_a = {
-			{
-				'tabs',
-				mode = 2,
-			},
-		},
+		theme = 'auto',
 	},
 })
