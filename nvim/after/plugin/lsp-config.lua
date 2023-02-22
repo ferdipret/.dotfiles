@@ -7,16 +7,7 @@ require('mason').setup({
 		},
 	},
 })
-require('mason-lspconfig').setup({
-	ensure_installed = {
-		'tsserver',
-		'elixirls',
-		'jsonls',
-		'tailwindcss',
-		'prismals',
-		'solargraph',
-	},
-})
+require('mason-lspconfig').setup()
 
 require('cmp').setup({
 	sources = {
