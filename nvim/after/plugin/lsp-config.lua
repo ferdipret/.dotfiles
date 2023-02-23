@@ -38,6 +38,7 @@ null_ls.setup({
 		null_ls.builtins.formatting.prettierd,
 		null_ls.builtins.formatting.rubocop,
 		null_ls.builtins.diagnostics.eslint,
+		null_ls.builtins.diagnostics.rubocop,
 		null_ls.builtins.code_actions.eslint,
 	},
 	on_attach = lsp_format.on_attach,
