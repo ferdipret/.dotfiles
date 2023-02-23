@@ -12,7 +12,6 @@ local settings = {
 	mouse = 'a',
 	pumheight = 10,
 	showmode = false,
-	--	showtabline = 2,
 	smartcase = true,
 	splitbelow = true,
 	splitright = true,
