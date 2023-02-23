@@ -14,7 +14,9 @@ require('nvim-autopairs').setup()
 require('nvim-surround').setup()
 require('trouble').setup()
 require('nvim-ts-autotag').setup()
--- require('bufferline').setup()
+require('Comment').setup({
+	pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+})
 
 require('indent_blankline').setup({
 	show_current_context = true,
