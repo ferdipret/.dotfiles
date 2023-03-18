@@ -14,6 +14,7 @@ return {
 	'folke/trouble.nvim',
 	'windwp/nvim-ts-autotag',
 	'romgrk/barbar.nvim',
+	'akinsho/toggleterm.nvim',
 	{
 		'epwalsh/obsidian.nvim',
 		dependencies = { 'nvim-telescope/telescope.nvim' },

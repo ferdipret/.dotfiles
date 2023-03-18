@@ -96,6 +96,10 @@ function M.setup()
 				name = '<localleader>',
 				f = { '<cmd>lua vim.lsp.buf.format {async = true}<CR>', 'Format file' },
 			},
+			t = {
+				name = '+toggle',
+				t = { '<cmd>terminal<CR>', 'Terminal' },
+			},
 		},
 		g = {
 			d = { '<cmd>lua vim.lsp.buf.definition()<CR>', 'Lookup definition' },
