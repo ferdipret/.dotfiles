@@ -68,6 +68,7 @@ local options = {
 			select = false,
 		}),
 		['<Tab>'] = cmp.mapping(function(fallback)
+			local copilot_keys = vim.fn['copilot#Accept']()
 			if cmp.visible() then
 				cmp.select_next_item()
 			elseif require('luasnip').expand_or_jumpable() then
@@ -80,6 +81,8 @@ local options = {
 					),
 					''
 				)
+		  elseif copilot_keys ~= '' and type(copilot_keys) == 'string' then
+    		vim.api.nvim_feedkeys(copilot_keys, 'i', true)
 			else
 				fallback()
 			end

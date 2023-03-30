@@ -21,4 +21,5 @@ return {
 		'jose-elias-alvarez/null-ls.nvim',
 		dependencies = { 'lukas-reineke/lsp-format.nvim' },
 	},
+	{'github/copilot.vim'}
 }
