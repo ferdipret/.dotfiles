@@ -1,19 +1,22 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
+	"nvim-treesitter/nvim-treesitter",
 	config = function()
-		local status_ok, treesitter_configs = pcall(require, 'nvim-treesitter.configs')
-		if not status_ok then return end
+		local status_ok, treesitter_configs = pcall(require, "nvim-treesitter.configs")
+		if not status_ok then
+			return
+		end
 
 		treesitter_configs.setup({
+			modules = {},
 			ensure_installed = {
-				'javascript',
-				'typescript',
-				'tsx',
-				'lua',
-				'markdown',
-				'html',
-				'json',
-				'vim',
+				"javascript",
+				"typescript",
+				"tsx",
+				"lua",
+				"markdown",
+				"html",
+				"json",
+				"vim",
 			},
 			auto_install = true,
 			ignore_install = {},
@@ -30,5 +33,5 @@ return {
 				enable = true,
 			},
 		})
-	end
+	end,
 }

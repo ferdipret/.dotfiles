@@ -1,16 +1,16 @@
 return {
-	'nvim-lualine/lualine.nvim',
+	"nvim-lualine/lualine.nvim",
 	config = function()
-		require('lualine').setup({
+		require("lualine").setup({
 			options = {
-				section_separators = { left = '', right = '' },
-				component_separators = { left = '', right = '' },
-				theme = 'auto',
+				section_separators = { left = "", right = "" },
+				component_separators = { left = "", right = "" },
+				theme = "auto",
 				disabled_filetypes = {
-					statusline = { 'NvimTree' },
-					winbar = { 'NvimTree' },
+					statusline = { "NvimTree" },
+					winbar = { "NvimTree" },
 				},
 			},
 		})
-	end
+	end,
 }
