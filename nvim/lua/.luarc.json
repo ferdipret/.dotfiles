@@ -1,0 +1,31 @@
+{
+  "workspace.library": [
+    "/Users/ferdi/.local/share/nvim/lazy/neodev.nvim/types/stable",
+    "/usr/local/Cellar/neovim/0.8.3/share/nvim/runtime/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/catppuccin/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/nvim-tree.lua/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/nvim-lspconfig/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/LuaSnip/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/mason.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/oil.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/cmp-nvim-lsp/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/cmp_luasnip/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/indent-blankline.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/which-key.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/lualine.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/cmp-path/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/lazy.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/neodev.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/nvim-treesitter/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/cmp-buffer/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/cmp-cmdline/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/nvim-web-devicons/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/gitsigns.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/barbar.nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/dashboard-nvim/lua",
+    "/Users/ferdi/.local/share/nvim/lazy/nvim-cmp/lua",
+    "/Users/ferdi/.dotfiles/nvim/lua",
+    "${3rd}/luv/library"
+  ]
+}

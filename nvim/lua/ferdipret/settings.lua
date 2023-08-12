@@ -39,11 +39,6 @@ vim.diagnostic.config({
 	virtual_text = false,
 })
 
--- vim.opt.shortmess:append('c')
--- vim.opt.listchars:append('space:⋅')
--- vim.opt.listchars:append('tab: →')
--- vim.opt.listchars:append('eol:↴')
-
 for k, v in pairs(settings) do
 	vim.opt[k] = v
 end
