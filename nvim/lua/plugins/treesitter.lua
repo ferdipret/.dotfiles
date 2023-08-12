@@ -15,6 +15,8 @@ return {
 				'json',
 				'vim',
 			},
+			auto_install = true,
+			ignore_install = {},
 			sync_install = false,
 			highlight = {
 				enable = true,

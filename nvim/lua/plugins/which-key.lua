@@ -13,6 +13,11 @@ return {
 		end
 
 		which_key.setup({
+			icons = {
+				breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
+				separator = "➜", -- symbol used between a key and it's label
+				group = "+", -- symbol prepended to a group
+			},
 			key_labels = {
 				['<space>'] = 'SPC',
 				['<cr>'] = 'RET',
@@ -26,8 +31,6 @@ return {
 
 				b = {
 					name = '+buffer',
-					a = { '<cmd>BufferCloseAllButCurrent<CR>', 'Delete all but current' },
-					d = { '<cmd>BufferDelete<CR>', 'Delete' },
 					p = { '<cmd>bprev<CR>', 'Buffer previous' },
 					n = { '<cmd>bnext<CR>', 'Buffer next' },
 				},
@@ -48,6 +51,10 @@ return {
 
 				o = {
 					name = '+open'
+				},
+
+				p = {
+					name = '+project',
 				},
 
 				['<localleader>'] = {

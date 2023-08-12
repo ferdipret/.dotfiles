@@ -19,6 +19,7 @@ return {
 						enable = true,
 					},
 				},
+				sync_root_with_cwd = true,
 			}
 
 			require('nvim-tree').setup(options)
@@ -31,7 +32,7 @@ return {
 			{ 'nvim-tree/nvim-web-devicons', lazy = true }
 		},
 		keys = {
-			{ '<leader>e', function() require('oil').open_float() end, desc = 'explore' },
+			{ '<leader>oe', function() require('oil').open_float() end, desc = 'explore' },
 			{ '<leader>fp', function() require('oil').open(vim.fn.getcwd()) end, desc = 'in project' },
 		},
 		config = function()

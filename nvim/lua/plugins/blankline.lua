@@ -1,8 +1,20 @@
 return {
-	'lukas-reineke/indent-blankline.nvim',
-	config = function()
-		require('indent_blankline').setup({
-			show_current_context = true,
-		})
-	end
+	"lukas-reineke/indent-blankline.nvim",
+	event = { "BufReadPost", "BufNewFile" },
+	opts = {
+		filetype_exclude = {
+			"help",
+			"alpha",
+			"dashboard",
+			"neo-tree",
+			"Trouble",
+			"lazy",
+			"mason",
+			"notify",
+			"toggleterm",
+			"lazyterm",
+		},
+		show_trailing_blankline_indent = false,
+		show_current_context = true,
+	},
 }
