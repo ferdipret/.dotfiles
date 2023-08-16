@@ -49,6 +49,10 @@ return {
 					o = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Open float" },
 				},
 
+				n = {
+					name = "+notes",
+				},
+
 				o = {
 					name = "+open",
 				},

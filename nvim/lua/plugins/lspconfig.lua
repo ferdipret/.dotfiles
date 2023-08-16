@@ -3,6 +3,10 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 	},
+
+	{
+		"folke/trouble.nvim",
+	},
 	-- Formatters
 	{
 		"jose-elias-alvarez/null-ls.nvim",
