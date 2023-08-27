@@ -36,13 +36,15 @@ return {
 	keys = {
 		{ "<leader><space>", "<cmd>Telescope find_files<CR>", desc = "Find file" },
 		{ "<leader>ff", "<cmd>Telescope find_files hidden=true<CR>", desc = "Find file" },
+		{ "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Live Grep" },
+		{ "<leader>bf", "<cmd>Telescope buffer<CR>", desc = "Find buffer" },
+		{ "<leader>hf", "<cmd>Telescope help_tags<CR>", desc = "Help Tags" },
 	},
 	config = function()
 		require("telescope").setup({
 			defaults = {
 				vimgrep_arguments = {
 					"rg",
-					"-L",
 					"--color=never",
 					"--no-heading",
 					"--with-filename",
