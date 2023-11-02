@@ -35,3 +35,11 @@ export NVM_DIR="$HOME/.nvm"
 export ERL_AFLAGS="-kernel shell_history enabled"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+# pnpm
+export PNPM_HOME="/Users/ferdi/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
