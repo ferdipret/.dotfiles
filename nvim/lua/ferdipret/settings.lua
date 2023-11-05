@@ -32,6 +32,13 @@ local settings = {
 	list = true,
 }
 
+vim.opt.listchars = {
+	trail = "•",
+	extends = "◀",
+	precedes = "▶",
+	nbsp = "•",
+}
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
