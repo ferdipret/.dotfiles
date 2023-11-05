@@ -33,7 +33,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add IEx history
 export ERL_AFLAGS="-kernel shell_history enabled"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 # pnpm
@@ -43,3 +42,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+path+=("/usr/local/opt/llvm/bin")
+path+=("/opt/homebrew/bin")
+
+export PATH
