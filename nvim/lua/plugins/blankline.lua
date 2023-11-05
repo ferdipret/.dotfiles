@@ -1,20 +1,13 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
+	main = "ibl",
 	event = { "BufReadPost", "BufNewFile" },
 	opts = {
-		filetype_exclude = {
-			"help",
-			"alpha",
-			"dashboard",
-			"neo-tree",
-			"Trouble",
-			"lazy",
-			"mason",
-			"notify",
-			"toggleterm",
-			"lazyterm",
+		whitespace = { highlight = { "Whitespace", "NonText" } },
+		indent = {
+			char = "▎",
+			tab_char = "▎",
+			priority = 2,
 		},
-		show_trailing_blankline_indent = false,
-		show_current_context = true,
 	},
 }
