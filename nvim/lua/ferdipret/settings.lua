@@ -33,18 +33,12 @@ local settings = {
 }
 
 vim.opt.listchars = {
+	tab = "  ",
 	trail = "•",
 	extends = "◀",
 	precedes = "▶",
 	nbsp = "•",
 }
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
-vim.diagnostic.config({
-	virtual_text = false,
-})
 
 for k, v in pairs(settings) do
 	vim.opt[k] = v
